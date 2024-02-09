@@ -1,0 +1,615 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+    background-color: white; /* Fondo blanco para el body */
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Añade transición para un cambio suave */
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img {
+    width: 90px; /* Ajusta el tamaño del logo según tu necesidad */
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+nav ul {
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black; /* Texto en blanco */
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+nav a[href="#contacto"] {
+    color: purple; /* Color morado para el enlace de "Contacto" */
+}
+
+nav a:hover {
+    color: darkcyan;
+    
+}
+
+.menu-toggle {
+    display: none; /* Oculta la barra de menú en pantallas grandes */
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.titulo-texturizado {
+  font-size: 2em; /* Tamaño del texto */
+  color: transparent;
+  background: url('Imagenes/textura.jpg'); /* Ruta a la imagen de la textura */
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: 'Arial', sans-serif; /* Cambia a la fuente deseada */
+    text-align: center
+}
+
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    box-shadow: 2px 2px 3px #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-float i {
+    margin-top: 5px;
+}
+
+
+
+.background-section {
+    height: 100%;
+    background-image: url(Imagenes/Fondo4.jpeg); /* Fondo de la sección */
+    background-size: cover;
+    background-position: top;
+    position: relative; /* Para posicionar los elementos internos de forma absoluta */
+    overflow: hidden; /* Oculta los círculos que se salgan de la sección */
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.circle {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5); /* Color de los círculos */
+    border-radius: 50%;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Asegura que el texto esté sobre los círculos */
+}
+
+.animated-text {
+    font-size: 48px;
+    color: black; /* Color del texto */
+    text-align: center;
+}
+
+
+.Sobre-Nosotros {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 100vh;
+        }
+
+        .left {
+    flex: 1;
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+        .right {
+            flex: 1;
+            background-color: #9b7ee4;
+            padding: 70px;
+            color: #fff;
+            border-radius: 20px;
+        }
+        .titulo {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+.color-text {
+            color: #6a0dad;
+            font-weight: bold;
+        }
+
+.advantages-list {
+            list-style-type: disc; /* Cambia el tipo de marcador */
+            margin-left: 20px; /* Añade un margen a la izquierda */
+        }
+.advantages-list li {
+margin-bottom: 7px;
+}
+.imagen-circular {
+    width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+    border-radius: 50%; /* Redondea los bordes para hacer la imagen circular */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+}
+
+.imagen-circular-1 {
+    width: 100%; /* Ajusta el tamaño de la imagen para que se ajuste al contenedor circular */
+    height: auto;
+}
+
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    width: 200px;
+    height: 250px;
+    margin: 20px auto; /* Auto en el segundo valor centra horizontalmente */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjet-img{
+     width: 63%;/* La imagen ocupa el 100% del ancho de su contenedor */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+     margin: auto;
+}
+}
+
+.tarjeta:nth-child(2) { /* Utiliza el número correspondiente a la posición de la tarjeta */
+    background-color: cornflowerblue; /* Cambia este color al que desees */
+}
+
+.tarjeta:nth-child(4) { /* Utiliza el número correspondiente a la posición de la tarjeta */
+    background-color: cornflowerblue; /* Cambia este color al que desees */
+}
+
+.tarjeta:nth-child(6) { /* Utiliza el número correspondiente a la posición de la tarjeta */
+    background-color: cornflowerblue; /* Cambia este color al que desees */
+}
+.tarjeta:hover {
+    transform: rotateY(180deg);
+}
+
+/* Estilos para el contenido frontal */
+.tarjeta > * {
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+/* Estilos para el contenido trasero */
+.tarjeta:hover > * {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.descripcion {
+    display: none;
+    margin-top: 10px;
+}
+
+.tarjeta:hover img {
+    display: none;
+}
+
+.tarjeta:hover h3,
+.tarjeta:hover .icono {
+    display: none;
+}
+
+
+
+/* Estilos base */
+.paquetes {
+    position: relative;
+    padding: 50px 0; /* Ajusta el padding para dispositivos más pequeños */
+}
+
+.imagen-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.tarjetas-paquetes {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en dispositivos más pequeños */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 20px; /* Agrega espacio entre las tarjetas */
+    padding: 0 20px; /* Ajusta el padding para dispositivos más pequeños */
+}
+
+.tarjeta-1 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    flex: 1 0 250px; /* Hace que las tarjetas tengan un ancho fijo y puedan crecer si hay espacio disponible */
+}
+
+.tarjeta-1 h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.tarjeta-1 p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.tarjeta-1 .precio {
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.tarjeta-1 .boton {
+    display: block;
+    background-color: #6a0dad;
+    color: #fff;
+    padding: 10px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Agrega un margen superior de 20px */
+}
+
+.tarjeta-1 .boton:hover {
+    background-color: #4a086b;
+}
+
+.list-paq {
+    list-style-type: disc; /* Cambia el tipo de marcador */
+}
+
+.list-paq li {
+    margin-bottom: 15px; /* Agrega separación entre cada elemento de la lista */
+}
+
+
+
+.container3 {
+    width: 90%; /* Usamos un valor relativo para adaptarse al ancho del contenedor padre */
+    max-width: 400px; /* Limitamos el ancho máximo para evitar que el formulario se vea demasiado grande en pantallas grandes */
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Aseguramos que el padding y el borde no aumenten el ancho total del contenedor */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Aseguramos que el padding y el borde no aumenten el ancho total del elemento */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a0073;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .container3 {
+        padding: 20px; /* Reducimos el padding para pantallas más pequeñas */
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    textarea,
+    button {
+        padding: 8px; /* Reducimos el padding de los elementos de formulario y el botón para pantallas más pequeñas */
+    }
+}
+
+
+/* Media queries para hacer el diseño responsive */
+@media screen and (max-width: 768px) {
+    .tarjetas-paquetes {
+        padding: 0; /* Quita el padding en dispositivos más pequeños */
+    }
+
+    .tarjeta-1 {
+        width: calc(50% - 20px); /* Establece el ancho de las tarjetas al 50% del contenedor */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tarjeta-1 {
+        width: calc(100% - 20px); /* Establece el ancho de las tarjetas al 100% del contenedor */
+    }
+}
+
+
+
+
+.comparacion {
+    margin-top: 30px;
+    background-color: black; /* Fondo negro para la sección */
+    color: white; /* Letras blancas */
+    padding: 50px; /* Agrega espacio alrededor de la tabla */
+
+}
+
+.tabla-comparativa {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: black;
+}
+
+.tabla-comparativa th, .tabla-comparativa td {
+    border: 1px solid #6a0dad;
+    padding: 8px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.tabla-comparativa th {
+    
+    background-color: #6a0dad;
+    
+}
+
+.tu-empresa {
+ background-color: cornflowerblue;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .comparacion {
+         padding: 10px;
+        }
+    .tabla-comparativa th, .tabla-comparativa td {
+        padding: 0px; /* Ajusta el espacio interno de las celdas para dispositivos más pequeños */
+    }
+}
+
+.como-funciona {
+    padding: 50px 0;
+}
+
+.fases {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.fase {
+    flex: 0 1 calc(20% - 20px);
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.fase i {
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+    color: #007bff; /* Color de la flecha */
+}
+
+.fase h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.fase p {
+    font-size: 16px;
+    color: #333;
+}
+.Fases-1{
+    color: #6a0dad;
+    text-align: center;
+}
+
+
+.testimonios {
+    text-align: center;
+    padding: 40px;
+}
+
+.testimonial {
+    margin-top: 20px;
+}
+
+.testii {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.testimonial cite {
+    font-weight: bold;
+    display: block;
+    color: #555;
+}
+
+
+.redes-sociales i {
+    font-size: 24px; /* Tamaño del icono */
+    color: #000; /* Color del icono */
+    margin: 5px; /* Espaciado alrededor de los iconos */
+}
+.footer {
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten según el tamaño */
+}
+
+.footer .section {
+    max-width: 250px;
+    text-align: center;
+    margin: 10px; /* Añade un poco de margen alrededor de las secciones */
+}
+
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Muestra la barra de menú en pantallas pequeñas */
+    }
+
+    .nav-list {
+        display: none; /* Oculta la lista de menú por defecto */
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 60px; /* Ajusta según sea necesario para evitar solapamiento con el header */
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .nav-list.active {
+        display: flex; /* Muestra la lista cuando la clase "active" está presente */
+    }
+
+    /* Añade estilos para mejorar la apariencia del menú desplegable */
+    .nav-list li {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Sobre-Nosotros {
+        flex-direction: column;
+        height: auto; /* Quita la altura fija para que la sección se ajuste al contenido */
+    }
+
+    .left, .right {
+        flex: none; /* Anula la propiedad flex para que los elementos no se estiren */
+        width: 100%; /* Establece el ancho al 100% para ocupar todo el espacio disponible */
+        padding: 30px; /* Ajusta el padding para dispositivos más pequeños */
+        border-radius: 0; /* Quita el borde redondeado en dispositivos más pequeños */
+        text-align: center; /* Centra el contenido */
+    }
+
+    .right {
+        margin-top: 20px; /* Añade un margen superior al elemento derecho */
+    }
+}
+
